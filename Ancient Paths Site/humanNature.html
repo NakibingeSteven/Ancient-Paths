@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .top-container {
+            background-color: #f1f1f1;
+            padding: 30px;
+        }
+
+        .header {
+            padding: 10px 16px;
+            background: #555;
+            color: #f1f1f1;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 102px;
+        }
+
+        /**TABLE**/
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="Sanctuary.html">Sanctuary Paths</a>
+        <a href="#">5D theology</a>
+        <a href="#">Bible Parallels</a>
+        <a href="#">Question Sites</a>
+        <a href="editor.html">Theology Blocks Playground</a>
+        <a href="#">Timelines</a>
+    </div>
+
+    <div id="main">
+        <div class="top-container">
+            <span style="font-size:30px;cursor:pointer;text-align: center;" onclick="openNav()">&#9776;</span>
+            <h1 style=" text-align: center;">Old Way Ministries</h1>
+            <p style=" text-align: center;">Resting our Way to Heaven</p>
+
+        </div>
+
+        <div class="header" id="myHeader">
+            <h2>My Header</h2>
+
+        </div>
+        <h2>The different Human Nature</h2>
+        <form>
+            <select id="mySelect" name="cars" onchange="myFunction()">
+                <option value="preFallMan">Pre- Fall Human Nature</option>
+                <option value="postFallMan">Post Fall Human Nature</option>
+                <option value="ChristPreRessurection">Christ Nature Before Ressurection</option>
+                <option value="ChristPostRessurection">Christ Nature After Ressurection</option>
+                <option value="ChristianPreRessurection">Christian Nature Before Ressurection</option>
+                <option value="ChristianPostRessurection">Christian Natue After Resurection</option>
+            </select>
+        </form>
+        <table style="width:100%">
+            <tr>
+                <th>Influence</th>
+                <th>Nature</th>
+                <th>Description</th>
+                <th>Final Outcome</th>
+            </tr>
+            <tr>
+                <td id="higherInfluence">immaterial Influence</td>
+                <td>Higher Nature</td>
+                <td>Thoughts,Minds,Desires,Feelings,Heart</td>
+                <td id="higherResult">effect on higher nature</td>
+            </tr>
+            <tr>
+                <td id="lowerInfluence">Material Influence</td>
+                <td>Lower Nature</td>
+                <td>Actions,HUman Body</td>
+                <td id="lowerResult">effect on lower nature</td>
+            </tr>
+        </table>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+            //influence
+            let higherInfluence = document.getElementById("higherInfluence");
+            let lowerInfluence = document.getElementById("lowerInfluence");
+            //results
+            let higherResult = document.getElementById("higherResult");
+            let lowerResult = document.getElementById("lowerResult");
+
+            //arrays [higherInfluence,lowerInfluence,higherResults,lowerResult]
+
+            let preFallMan = ["Righteousness/Holy Living", "Righteousness/Holy Living", "Sinless and Perfect/Holy Mind", "Sinless and Perfect/Holy Body/Mind slave to Higher Nature"];
+            let postFallMan = ["Sin", "Sin", "Sin Affected/Sin inclined ", "Sin affected/Deterioration/Degeneration of Body//Mind slave to Higher Nature"]
+            let ChristPreRessurection = ["Righteousness/Holy Spirit inclination", "Sin", "Sinless and Perfect/Holy Mind", "Spirit controlled Sin affected/Degeneration/deterioraton of Body"]
+            let ChristPostRessurection = ["Righteousness/Holy Spirit inclination", "Holiness/Resurection/Second Creation of Body", "Sinless and Perfect/Holy Mind", "Spirit controlled SInless Holy/Regenerated Body"]
+            let ChristianPreRessurection = ["Righteousness/Holy Spirit inclination", "Sin", "Sinless and Perfect/Holy Mind", "Spirit controlled Sin affected/Degeneration/deterioraton"]
+            let ChristianPostRessurection = ["Righteousness/Holy Spirit inclination", "Holiness/Resurection/Second Creation  of Body", "Sinless and Perfect/Holy Mind", "Spirit controlled SInless Holy/Regenerated Body"]
+
+
+            function myFunction() {
+                let arrayName = document.getElementById("mySelect").value;
+                if (arrayName == "preFallMan") {
+                    fillTable(preFallMan);
+                } else if (arrayName == "postFallMan") {
+                    fillTable(postFallMan);
+                } else if (arrayName == "ChristPreRessurection") {
+                    fillTable(ChristPreRessurection);
+                } else if (arrayName == "ChristPostRessurection") {
+                    fillTable(ChristPostRessurection);
+                } else if (arrayName == "ChristianPreRessurection") {
+                    fillTable(ChristPreRessurection);
+                } else if (arrayName == "ChristianPostRessurection") {
+                    fillTable(ChristianPostRessurection);
+                }
+            }
+            function fillTable(arrayName) {
+                let i = 0;
+                for (i = 0; i < 4; i++) {
+                    higherInfluence.innerHTML = arrayName[0];
+                    lowerInfluence.innerHTML = arrayName[1];
+                    higherResult.innerHTML = arrayName[2];
+                    lowerResult.innerHTML = arrayName[3];
+                }
+            }
+
+        </script>
+
+</body>
+
+</html>

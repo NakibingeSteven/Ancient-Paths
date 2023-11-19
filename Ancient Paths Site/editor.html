@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./blocks/blockly_compressed.js"></script>
+    <script src="./blocks/blocks_compressed.js"></script>
+    <script src="./blocks/"></script>
+    <script src="./blocks/en.js"></script>
+
+    <link rel="stylesheet" href="w3.css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .top-container {
+            background-color: #f1f1f1;
+            padding: 30px;
+        }
+
+        .header {
+            padding: 10px 16px;
+            background: #555;
+            color: #f1f1f1;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 102px;
+        }
+
+        .textbox {
+            font-style: normal;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="Sanctuary.html">Sanctuary Paths</a>
+        <a href="#">5D theology</a>
+        <a href="#">Bible Parallels</a>
+        <a href="#">Question Sites</a>
+        <a href="editor.html">Theology Blocks Playground</a>
+        <a href="#">Timelines</a>
+    </div>
+
+    <div id="main">
+        <div class="top-container">
+            <span style="font-size:30px;cursor:pointer;text-align: center;" onclick="openNav()">&#9776;</span>
+            <h1 style=" text-align: center;">Old Way Ministries</h1>
+            <p style=" text-align: center;">Resting our Way to Heaven</p>
+
+        </div>
+
+        <div class="header" id="myHeader">
+            <h2>My Header</h2>
+        </div>
+        <div class="w3-container  w3-center w3-padding-16">
+            <button onclick="showCode()">Generate Sentences</button>
+            <button onclick="showJS()">Generate JavaScript</button>
+            <button onclick="splitter()">Console log Code Lines</button>
+            <input type="button" value="Print Document" onclick="printDiv()" />
+            <input type="button" value="Clear Text" onclick="clearText()" />
+        </div>
+
+        <div class="w3-container">
+            <div style="width: 100%">
+                <div id="blocklyDiv" style="display: inline-block; height: 500px; width: 58%">
+                </div>
+                <textarea id="output" class="textbox" disabled="disabled"
+                    style="display: inline-block; height: 500px; width: 40%"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+        <category name="TypedVariables" colour="#995ba5" custom="VARIABLE_DYNAMIC"></category>
+        <category name="Christology" colour="#9fa55b"></category>
+        <category name="Pneumatology" colour="#5ba55b"></category>
+        <category name="Soteriology" colour="#5b80a5"></category>
+        <category name="Angelogy" colour="#a5745b"></category>
+        <category name="Logic" colour="#5b80a5">
+            <block type="controls_if"></block>
+            <block type="logic_compare">
+                <field name="OP">EQ</field>
+            </block>
+            <block type="logic_operation">
+                <field name="OP">AND</field>
+            </block>
+            <block type="logic_negate"></block>
+            <block type="logic_boolean">
+                <field name="BOOL">TRUE</field>
+            </block>
+            <block type="logic_null"></block>
+            <block type="logic_ternary"></block>
+        </category>
+        <category name="Variables" colour="#a55b80" custom="VARIABLE"></category>
+    </xml>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        var stage = document.getElementById("output");
+
+
+        //INJECTING THE BLOCKS INTO THE XML SECTION
+        var workspace = Blockly.inject("blocklyDiv", {
+            media: "media/",
+            toolbox: document.getElementById("toolbox"),
+        });
+
+        //run the function
+
+        function showCode() {
+            // Generate JavaScript code and display it.
+            Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+            var code = Blockly.JavaScript.workspaceToCode(workspace);
+            //document.write(code);
+            stage.innerHTML = "";
+            stage.innerHTML += code;
+        }
+
+        function showJS() {
+            // Generate JavaScript code and display it.
+            Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
+            var code = Blockly.JavaScript.workspaceToCode(workspace);
+            alert(code);
+        }
+
+        function clearText() {
+            stage.innerHTML = "";
+        }
+        //PRINT DIV
+        function printDiv() {
+            var divContents = stage.innerHTML;
+            var title = document.title;
+            var a = window.open();
+            a.document.write("<html>");
+            a.document.write("<body>");
+            // a.document.write("<h1>"+ title +"<\h1>");
+            //add lines to the print page
+            let stageText = document.getElementById("output").textContent;
+            const lines = stageText.split("\n");
+            lines.forEach(line => {
+                a.document.write("<div style='p{font-family:georgia,times,serif;font-size:10pt;font-style: normal;}'>");
+                a.document.write(line);
+                a.document.write("<\div>");
+            });
+            //end of add lines to the print page
+            a.document.write("</body>");
+            a.document.write("</html>");
+            a.document.close();
+            a.print();
+        }
+
+    </script>
+
+</body>
+
+</html>
