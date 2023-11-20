@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sanctaury Paths</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sanctaury.css" />
+  </head>
+
+  <body>
+    <h1>Hebrew Sanctuary Tour</h1>
+        <form>
+      <select id="mySelect" name="cars" onchange="myFunction()">
+        <option value="sanctuaryPath">Sanctuary</option>
+        <option value="isrealPath">Isreal Path/ Exodus</option>
+        <option value="christianPath">Christian Path/Salvation</option>
+        <option value="images">Add Images</option>
+      </select>
+    </form>
+    <div class="grid-wrapper">
+      <div class="grid-container">
+        <div class="grid-item ark" onclick="navigate(1)" id="arkCell">
+          Ark of the Covenant
+        </div>
+        <div class="grid-item main-veil" onclick="navigate(2)">Main Veil</div>
+        <div
+          class="grid-item incense-altar"
+          id="incenseCell"
+          onclick="navigate(3)"
+        >
+          Incense Altar
+        </div>
+        <div class="grid-item menorah" id="candleCell" onclick="navigate(4)">
+          Menorah
+        </div>
+        <div class="grid-item table-shewbread" id="bread" onclick="navigate(5)">
+          Table of Showbread
+        </div>
+        <div class="grid-item second-veil" onclick="navigate(2)">
+          Second Veil
+        </div>
+      </div>
+      <div class="grid-container2">
+        <div class="grid-item lava-basin" id="lavaCell" onclick="navigate(6)">
+          Lava Basin
+        </div>
+        <div
+          class="grid-item sacrifice-altar"
+          id="offeringCell"
+          onclick="navigate(7)"
+        >
+          Sacrifice Altar
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-buttons">
+      <button onclick="previous()">Previous</button>
+      <button onclick="next()">Next</button>
+    </div>
+    </div>
+
+    <script>
+      //sanctuary cells
+      let ark = document.getElementById("arkCell");
+      let incenseAltar = document.getElementById("incenseCell");
+      let candleStick = document.getElementById("candleCell");
+      let altarBread = document.getElementById("bread");
+      let lava = document.getElementById("lavaCell");
+      let burntOffering = document.getElementById("offeringCell");
+
+      //sanctuary items ark,incense,candlestick,bread,lava,burntoffering
+      let sanctuaryPath = [
+        "ARK",
+        "altar of incense",
+        "Seven branched canclestick",
+        "altarof shew Bread",
+        "Lava Basin",
+        "Alatarof burnt ofeering",
+      ];
+      //isrealpath
+      let isrealPath = [
+        "Mount Sinai/10 commandments",
+        "Camp Preparation",
+        "Manna",
+        "Red Sea Crossing",
+        "Passover",
+      ];
+      //christainPATH
+      let christianPath = [
+        "law of Love",
+        "Witnessing",
+        "Wordof God",
+        "Baptism",
+        "Crucifixion  and Death of Christ",
+      ];
+      //salvation path
+      //apostasy path
+
+      function myFunction() {
+        let arrayName = document.getElementById("mySelect").value;
+        if (arrayName == "sanctuaryPath") {
+          fillTable(sanctuaryPath);
+        } else if (arrayName == "isrealPath") {
+          fillTable(isrealPath);
+        } else if (arrayName == "christianPath") {
+          fillTable(christianPath);
+        } else if (arrayName == "images") {
+          addImage();
+        }
+      }
+      function fillTable(arrayName) {
+        let i = 0;
+        for (i = 0; i < 4; i++) {
+          ark.innerHTML = arrayName[0];
+          incenseAltar.innerHTML = arrayName[1];
+          candleStick.innerHTML = arrayName[2];
+          bread.innerHTML = arrayName[3];
+          lava.innerHTML = arrayName[4];
+          burntOffering.innerHTML = arrayName[5];
+        }
+      }
+
+      //images
+
+      function addImage() {
+        let sanctuaryImage = "p.jpg";
+        let i = 0;
+        for (i = 0; i < 4; i++) {
+          ark.innerHTML = `<img src=${sanctuaryImage} alt="Girl in a jacket" style="width:100px;height:80px;">`;
+          incenseAltar.innerHTML = `<img src=${sanctuaryImage} alt="Girl in a jacket" style="width:100px;height:80px;">`;
+          candleStick.innerHTML = `<img src=${sanctuaryImage} alt="Girl in a jacket" style="width:100px;height:80px;">`;
+          bread.innerHTML = `<img src=${sanctuaryImage} alt="Girl in a jacket" style="width:100px;height:80px;">`;
+          lava.innerHTML = `<img src=${sanctuaryImage} alt="Girl in a jacket" style="width:100px;height:80px;">`;
+          burntOffering.innerHTML = `<img src=${sanctuaryImage} alt="Girl in a jacket" style="width:100px;height:80px;">`;
+        }
+      }
+
+      //navigation Code
+      var currentArticle = 1;
+      var gridItems = document.getElementsByClassName("grid-item");
+
+      function navigate(article) {
+        // Remove active class from all grid items
+        for (var i = 0; i < gridItems.length; i++) {
+          gridItems[i].classList.remove("active");
+        }
+
+        // Add active class to the selected grid item
+        gridItems[article - 1].classList.add("active");
+        currentArticle = article;
+      }
+
+      function previous() {
+        if (currentArticle > 1) {
+          navigate(currentArticle - 1);
+        } else {
+          navigate(gridItems.length); // Loop back to the flast item
+        }
+      }
+
+      function next() {
+        if (currentArticle < gridItems.length) {
+          navigate(currentArticle + 1);
+        } else {
+          navigate(1); // Loop back to the first item
+        }
+      }
+    </script>
+  </body>
+</html>
