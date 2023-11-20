@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Typology Introduction Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .currentPage {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 18px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        ul ul {
+            margin-left: 20px;
+        }
+
+        ul ul ul {
+            margin-left: 40px;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+            position: sticky;
+            top: 10px;
+            /* Adjust this value as needed to maintain spacing */
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 8px;
+            margin: 0 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+
+        section {
+            padding: 13px 0px 0;
+            /* Add extra padding to the top */
+            text-align: center;
+        }
+
+        /* Add more styling here as needed */
+
+        .card-container {
+            text-align: left;
+            /* Adjust the gap between cards */
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: calc(33.33% - 20px);
+            /* 3 cards per row; adjust as needed */
+            max-width: 300px;
+            /* Limit the card width */
+            transition: transform 0.2s;
+            /* Add a smooth hover effect */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            /* Lift the card slightly on hover */
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            /* Add spacing between image and button */
+        }
+
+        .download-button-container {
+            text-align: center;
+            margin-top: 10px;
+            /* Add spacing between button and card content */
+        }
+
+        .download-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            /* Add a smooth hover effect */
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+            /* Darker blue on hover */
+        }
+
+        /* Style for the "Download Documents" button */
+        .documents-button {
+            background-color: #28a745;
+            /* Green color for documents button */
+            margin-left: 4px;
+            /* Add spacing between the two buttons */
+        }
+
+        .documents-button:hover {
+            background-color: #1e7e34;
+            /* Darker green on hover */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <a href="index.html" class="currentPage">Introducution</a>
+        <a href="Cyrus.html">Cyrus</a>
+        <a href="Isaac.html">Isaac</a>
+        <a href="Joseph.html">Joseph</a>
+        <a href="Moses.html">Moses</a>
+        <a href="Elijah.html">Elijah</a>
+    </div>
+
+    <div class="main">
+        <nav>
+            <a href="#section1" id="nav-link-1">Introduction</a>
+            <a href="#section2" id="nav-link-2">Words Used in Bible</a>
+            <a href="#section3" id="nav-link-3">Characteristics </a>
+            <a href="#section3" id="nav-link-4">Dangers and extremes</a>
+            <a href="#section4" id="nav-link-5">Classification</a>
+        </nav>
+
+        <section id="section1">
+            <h2>Typology Introduction</h2>
+            <div class="card-container">
+                <p>It is usually an Old Testament type prefiguring something about redemption in the New Testament. The
+                    sacrificial system, the feasts and the whole sanctuary system were designed to foretell the sacrificial,
+                    redemptive work of Christ. In this sense, a type, by definition, points to the future of Christ, the
+                    church or the world to come.
+                </p>
+                    <h2>Forgotten Bible Study Method</h2>
+                    <p>Typology seems to be largely neglected in the modern church mainly due to The laws and restrictions of the
+                            Old Testament.
+                            People are so involved with the object of the Gospel that they have forgotten the shadow for the object.
+                            They  reject the laws as if they were not given by the same God they worship in the New Testament. They cry
+                            "grace" as if the Lord acquired it later and it was never His trait in the Old Testament. The
+                            consequence is they miss out on the unfulfilled truths in the Old Testament stories, laws, and
+                            covenants.
+                        </p>
+                            
+                    <h2>The justification and scriptures for typology</h2>
+                    <h3>Jesus and Typology</h3>
+                            <ul>
+                                <h3><ol>The walk to Emmaus</ol></h3>
+                             </ul>
+        
+                    
+                            <p><strong>The advice to the Pharisees</strong> (John 5:39–44): Jesus told the Pharisees who happened not to
+                                    understand the types/shadows about Him in the Old Testament that they should search the Scriptures, and
+                                    they would find Him.</p>
+                    
+                            <p><strong>The bronze snake</strong>: As Moses lifted up the serpent in the wilderness, so must the Son of Man
+                                    be lifted up (John 3:14; cf. Numbers 21:9).</p>
+                            <ul>
+                                    <h3><ol>Hebrews and Typology</ol></h3>
+                            </ul>
+                    
+                            <p>For the law having <strong><em>a shadow of good things to come, and not the very image of the
+                                                    things</em></strong>, can never with those sacrifices which they offered year by year
+                                    continually make the comers thereunto perfect (Hebrews 10:1 KJV, emphasis added).</p>
+                    
+                            <p>Who serve unto <strong><em>the example and shadow of heavenly things</em></strong>, as Moses was admonished
+                                    of God when he was about to make the tabernacle: for, See, saith He, <em>that</em> thou make all things
+                                    according to the pattern showed to thee in the mount (Hebrews 8:5 KJV).</p>
+                    
+                            <p>The Holy Ghost this signifying, that the way into the holiest of all was not yet made manifest, while as the
+                                    first tabernacle was yet standing: <strong><em>Which was a figure for the time then
+                                                    present</em></strong>, in which were offered both gifts and sacrifices, that could not
+                                    make him that did the service perfect, as pertaining to the conscience (Hebrews 9:8-9 KJV).</p>
+                    <br>
+
+                            <h3>Paul and Typology</h3>
+                            <p><em>Let no man therefore judge you in meat, or in drink, or in respect of a holyday, or of the new moon, or
+                                            of the Sabbath days: <strong>Which are a shadow of things to come; but</strong> the body is of
+                                            Christ (Colossians 2:16-17 KJV).</em></p>
+                    
+                            <p><em>Now all these things happened <strong>unto them for ensamples</strong>: and they are written for our
+                                            admonition, upon whom the ends of the world are come (1 Corinthians 10:11 KJV).</em></p>
+                    
+                            <p>By declaring "the substance belongs to Christ," Paul is basically teaching that all the sanctuary
+                                    terminology, laws, ceremonial requirements point forward to the reality of our Lord Jesus Christ, the
+                                    ultimate fulfiller of the law to the smallest tittle.</p>
+                    
+                            <p><em>Purge out therefore the old leaven, that you may be a new lump, as you are unleavened. For even
+                                            <strong>Christ our Passover is sacrificed for us (1 Corinthians 5:7 KJV).</em></p>
+                    
+                            <br>
+                            <h3>Matthew and the Exodus</strong></h3>
+                            <p>The writer of the book of Matthew shows it follows after the Old Testament exodus story. Baptism, wilderness,
+                                    temptations sequence is common to both the Israelites and Jesus.</p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="section2">
+            <h2>Words Used in Typology</h2>
+            <div class="card-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Word</th>
+                      <th>Word Meaning</th>
+                      <th>Example Scripture</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Type (Greek: tupos)</td>
+                      <td>Pattern, print, stamp</td>
+                      <td>Romans 5:14</td>
+                    </tr>
+                    <tr>
+                      <td>Antitype (Greek: antitupon)</td>
+                      <td>Something which resembles or corresponds to something else</td>
+                      <td>1 Peter 3:21...</td>
+                    </tr>
+                    <tr>
+                      <td>Pattern (Greek: hupotuposis)</td>
+                      <td>
+                        An outline or sketch, and hence a pattern that serves as a model
+                        prototype
+                      </td>
+                      <td>1 Timothy 1:16</td>
+                    </tr>
+                    <tr>
+                      <td>Example (Greek: hupodeigma)</td>
+                      <td>An example or model used as a model of behavior</td>
+                      <td>John 13:15, 2 Peter 2:6, Hebrews 8:5</td>
+                    </tr>
+                    <tr>
+                      <td>Shadow (Greek: skia)</td>
+                      <td>
+                        A shade or image cast by an object representing the form, not the
+                        substance or reality
+                      </td>
+                      <td>Colossians 2:16, 17, Hebrews 8:5</td>
+                    </tr>
+                    <tr>
+                      <td>Symbol (Greek: parabole)</td>
+                      <td>A comparison, likeness, or copy</td>
+                      <td>Hebrews 11:19, Hebrews 9:9-</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </section>
+        <hr>
+
+        <section id="section3">
+            <h2>The Characteristics of Typology</h2>
+            <div class="card-container">
+              
+                <ul>
+                    <li><strong>Correspondence / Similar Flow:</strong></li>
+                </ul>
+            
+                <p>
+                    Just as a shadow follows the outlines and shape of the object, the type and antitype must have a similar flow of events or similarities in the area they are both depicting or demonstrating. 
+                    Example: the type Passover lamb and antitype Christ were both blameless/innocent and substitutes for sin that is not theirs. Also, evil cannot be the type of what is good and pure.
+                </p>
+            
+                <ul>
+                    <li><strong>Dual Historicity:</strong></li>
+                </ul>
+            
+                <p>
+                    The types and antitypes both take place. In most cases, the type has a literal
+                     meaning at its point in time that is important. The antitype is just a secondary 
+                     meaning that God has hidden in time and space about the event referring to the letter coming of His son.
+                </p>
+            
+                <p>
+                    Note: Allegory is dangerous and it is where some interpreters claim that the types 
+                    (Old Testament stories) didn’t happen and they are just symbolic stories (with no 
+                    historical happening) written to predict the coming of Messiah. Hence they are just
+                     vessels with hidden spiritual meanings. In summary, it promotes single historicity antitype/fulfillment.
+                </p>
+            
+                <p>
+                    The allegory minimizes and often destroys the literal and historical in favor of the secondary sense.
+                </p>
+            
+                <ul>
+                    <li><strong>Type is More Glorious than Object</strong></li>
+                </ul>
+            
+                <p>
+                    The antitype is more perfect, greater, and continues. It reveals more truth when
+                     fulfilled and is more superior to the type. Christ can save; the blood of lambs and 
+                     goats can't. Christ is superior to Melchizedek. Christ's redemptive work is greater than 
+                     that of the Passover.
+                </p>
+            
+                <ul>
+                    <li><strong>Predictiveness/Predictive Prophecy</strong></li>
+                </ul>
+            
+                <p>
+                    Because of the correspondence or similar flow of events, if one knows the flow of the antitype, 
+                    they can predict the flow of the antitype. Simply said, if the Jews had understood the Jewish 
+                    sanctuary and sacrificial system, they would have understood the purpose and mission of the Messiah.
+                </p>
+            
+                <p>
+                    In a sense, the prophets knew about the antitype or future fulfillment.
+                </p>
+            
+                <p>
+                    The prophets studied carefully and tried to learn about this salvation. They spoke about 
+                    the grace that was coming to you. (1 Peter 1:10 ERV)
+                </p>
+            
+                <p>
+                    The Spirit of Christ was in those prophets. And the Spirit was telling about the sufferings 
+                    that would happen to Christ and about the glory that would come after those sufferings. 
+                    The prophets tried to learn about what the Spirit was showing them—when it would happen and what 
+                    the world would be like at that time. (1 Peter 1:11 ERV)
+                </p>
+            
+                <p>
+                    It was made clear to them that their service was not for themselves. They were serving you when 
+                    they told about the things you have now heard. You heard them from those who told you the Good News 
+                    with the help of the Holy Spirit sent from heaven. Even the angels would like very much to know more
+                     about these things you were told. (1 Peter 1:12 ERV)
+                </p>
+            
+                <p>
+                    These rules may be safely followed: wherever the three characteristics of types are found which have 
+                    been already mentioned, there is the type.
+                </p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="section4">
+            <h1>THE DANGERS OF TYPOLOGY</h1>
+            <div class="card-container">
+             
+                <h3>How Much of the Old Testament Is Typical?</strong></h3>
+                
+                <h3>The extravagance of some of the early Fathers (Idealism)/false
+         typology</strong></h3>
+                
+                <p>The early Fathers,
+         as Origen, Ambrose, and Jerome (revived in our time by Andrew Jukes and his
+         imitators). They sought for types, and of course found them, in
+         every incident and event, however trivial, recorded in Scripture.</p>
+                
+                <p>Mystery and mysticism were seen everywhere, in the cords and
+         pins of the tabernacle, in the yield of herds, in the death of one, in the
+         marriage of another, even in the number of fish caught by the disciples on the
+         night the risen Saviour appeared to them--how much some have tried to make of
+         that number, 153!</p>
+                
+                <h3>The rejection of
+         typology as a method of interpretation</strong></h3>
+         
+                <p>This opinion assumes that the <strong><em>New Testament writers have
+         exhausted the types of the Old Testamen</em></strong>t, while the fact is that those
+         found in the later Scripture are but samples taken from the storehouse where
+         many more are found. If they are not, then nothing is more arbitrary than the
+         New Testament use of types, for there is nothing to distinguish them from a
+         multitude of others of the same class. </p>
+                
+                <p>Further, the view assumes that divine authority alone can
+         determine the reality and import of types--a view that applies with equal force
+         against prophecy. The idea that God can not inspire people to discern truth not
+         openly stated in the Bible</p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="section5">
+            <h2>Classification of Typology</h2>
+            <div class="card-container">
+                <p><strong>Personal types</strong>, these are person in 
+                    Scripture whose lives and experiences illustrate some principle or 
+                    truth of redemption. These include Adam, who is expressly described 
+                    as the "figure of him that was to come" (Rom 5:14), Melchizedek, Abraham, 
+                    Aaron,Joseph, Jonah, etc.</p>
+                
+                <p> <strong>Historical /Event types</strong>, these include historical events 
+                    in the Old Testament that have  striking correspondence and are shadows e.g.
+                    the Exodus the Call of Abraham; Deliverances by the Judges, etc. </p>
+                
+                <p> <strong>Ritual types,</strong>these include the sanctuary and sacrificial 
+                    system in the Old Testament such as the Altar, the High Priest, the Priesthood, 
+                    the Tabernacle and its furniture. </p>
+            </div>
+        </section>
+        <hr>
+
+    </div>
+
+    <script>
+        // Function to scroll to the middle of a section
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                var sectionHeight = section.clientHeight;
+                var scrollTo = section.offsetTop - (windowHeight - sectionHeight) / 2;
+                window.scrollTo({
+                    top: scrollTo,
+                    behavior: "smooth" // This makes the scroll smooth
+                });
+            }
+        }
+
+        // Function to attach click event listeners to the navigation links
+        function attachScrollToNavLink(linkId, sectionId) {
+            var navLink = document.getElementById(linkId);
+            if (navLink) {
+                navLink.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    scrollToSection(sectionId);
+                });
+            }
+        }
+
+        // Call the function for each navigation link and its corresponding section
+        attachScrollToNavLink("nav-link-1", "section1");
+        attachScrollToNavLink("nav-link-2", "section2");
+        attachScrollToNavLink("nav-link-3", "section3");
+        attachScrollToNavLink("nav-link-4", "section4");
+        attachScrollToNavLink("nav-link-5", "section5");
+        attachScrollToNavLink("nav-link-6", "section6");
+
+    </script>
+    </script>
+</body>
+
+</html>
