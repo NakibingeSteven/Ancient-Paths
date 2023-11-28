@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <h1>5D:Fallen Creatures</h1>
+
+    <div class="center">
+      <form>
+        <select id="mySelect" onchange="myFunction()">
+          <option value="fallenCreation">Fallen Creation</option>
+          <option value="Wicked">Wicked Generaton</option>
+          <option value="fallenMenAsBeasts">Fallen Creatures as Beasts</option>
+        </select>
+      </form>
+      <table style="width: 100%">
+        <tr>
+          <th>Dimension</th>
+          <th>Aspect</th>
+        </tr>
+        <tr>
+          <td>Isreal/Primary Context</td>
+          <td id="isrealContext">The original context</td>
+        </tr>
+        <tr>
+          <td>Christ Context</td>
+          <td id="christContext">How it relates to Christ</td>
+        </tr>
+        <tr>
+          <td>Christian Context</td>
+          <td id="christianContext">
+            How it individually appears to Christians
+          </td>
+        </tr>
+        <tr>
+          <td>Church Context</td>
+          <td id="churchContext">How ot realtes to teh church</td>
+        </tr>
+        <tr>
+          <td>Heavenly Context</td>
+          <td id="heavenlyContext">effect on lower nature</td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      //influence
+      let antedeluvianContext;
+      let patriachContext;
+      let isrealContext = document.getElementById("isrealContext");
+      let christContext = document.getElementById("christContext");
+      let christianContext = document.getElementById("christianContext");
+      let churchContext = document.getElementById("churchContext");
+      let heavenlyContext = document.getElementById("heavenlyContext");
+
+      // array format [primaryContext,christContext,christianContext,churchContext,heavenlyContext]
+      let fallenCreation = {
+        isreal: "fallen Chidren of God",
+        Christ: "Saviour of the Fallen",
+        Christians: "Fallen People(individual)",
+        Church: "Falled Humans(Corporate)",
+        Heaven: "Fallen Angels",
+      };
+      let Wicked = {
+        isreal: "Fallen People",
+        Christ: "The Savoiur of World",
+        Christians: "Fallen Christians",
+        Church: "Fallen christians/Humanity",
+        Heaven: "Wicked Angels",
+      };
+      let fallenMenAsBeasts = {
+        isreal: "Golden Calf/ Worship of False Gods",
+        Christ: "Judge of Beasts",
+        Christians: "Self worshiplike Nebuchadnezzar",
+        Church: "The Beast of the Dark Ages",
+        Heaven: "Satan the serpent and his self worship",
+      };
+
+      //salvation context
+      let defaultString = ["1", "2", "3", "4", "5"];
+
+      function myFunction() {
+        let arrayName = document.getElementById("mySelect").value;
+        if (arrayName == "fallenCreation") {
+          fillTable(fallenCreation);
+        } else if (arrayName == "Wicked") {
+          fillTable(Wicked);
+        } else if (arrayName == "fallenMenAsBeasts") {
+          fillTable(fallenMenAsBeasts);
+        } else {
+          fillTable(defaultString);
+        }
+      }
+      function fillTable(objectName) {
+        // Assuming primaryContext, christContext, christianContext, churchContext, and heavenlyContext are defined somewhere in your code.
+
+        isrealContext.innerHTML = objectName.isreal;
+        christContext.innerHTML = objectName.Christ;
+        christianContext.innerHTML = objectName.Christians;
+        churchContext.innerHTML = objectName.Church;
+        heavenlyContext.innerHTML = objectName.Heaven;
+      }
+    </script>
+  </body>
+</html>

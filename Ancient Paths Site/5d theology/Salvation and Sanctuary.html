@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <h1>5D:Fallen Creatures</h1>
+
+    <div class="center">
+      <form>
+        <select id="mySelect" onchange="myFunction()">
+          <option value="sacrificeAltar">Altar of Sacrifice</option>
+          <option value="lavaBasin">lava Basin</option>
+          <option value="menorah">Menorah</option>
+          <option value="shewBread">shewBread</option>
+          <option value="arkConvenant">ark of the Convenant</option>
+          <option value="templeAsResidence">Temple As Residence</option>
+          <option value="temple">temple</option>
+          <option value="templeLatterRain">Temple Latter Rain</option>
+          <option value="lamb">lamb</option>
+          <option value="shewBread">shewBread</option>
+        </select>
+      </form>
+      <table style="width: 100%">
+        <tr>
+          <th>Dimension</th>
+          <th>Aspect</th>
+        </tr>
+        <tr>
+          <td>Isreal/Primary Context</td>
+          <td id="isrealContext">The original context</td>
+        </tr>
+        <tr>
+          <td>Christ Context</td>
+          <td id="christContext">How it relates to Christ</td>
+        </tr>
+        <tr>
+          <td>Christian Context</td>
+          <td id="christianContext">
+            How it individually appears to Christians
+          </td>
+        </tr>
+        <tr>
+          <td>Church Context</td>
+          <td id="churchContext">How ot realtes to teh church</td>
+        </tr>
+        <tr>
+          <td>Heavenly Context</td>
+          <td id="heavenlyContext">effect on lower nature</td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      //influence
+      let antedeluvianContext;
+      let patriachContext;
+      let isrealContext = document.getElementById("isrealContext");
+      let christContext = document.getElementById("christContext");
+      let christianContext = document.getElementById("christianContext");
+      let churchContext = document.getElementById("churchContext");
+      let heavenlyContext = document.getElementById("heavenlyContext");
+
+      // array format [primaryContext,christContext,christianContext,churchContext,heavenlyContext]
+      let sacrificeAltar = {
+        isreal: "Sons of God",
+        Christ: "The Sone of God",
+        Christians: "Children of God",
+        Church: "altar of shew Bread",
+        Heaven: "Lava Basin",
+      };
+
+      let lavaBasin = {
+        isreal: "Sons of God",
+        Christ: "The Sone of God",
+        Christians: "Children of God",
+        Church: "altar of shew Bread",
+        Heaven: "Lava Basin",
+      };
+
+      let incenseAltar = {
+        isreal: "Sons of God",
+        Christ: "The Sone of God",
+        Christians: "Children of God",
+        Church: "altar of shew Bread",
+        Heaven: "Lava Basin",
+      };
+
+      let menorah = {
+        isreal: "Sons of God",
+        Christ: "The Sone of God",
+        Christians: "Children of God",
+        Church: "altar of shew Bread",
+        Heaven: "Lava Basin",
+      };
+      let shewBread = {
+        isreal: "Sons of God",
+        Christ: "The Sone of God",
+        Christians: "Children of God",
+        Church: "altar of shew Bread",
+        Heaven: "Lava Basin",
+      };
+      let arkConvenant = {
+        isreal: "Sons of God",
+        Christ: "The Sone of God",
+        Christians: "Children of God",
+        Church: "altar of shew Bread",
+        Heaven: "Lava Basin",
+      };
+
+      let templeAsResidence = {
+        isreal: "Temple of God and Shekinah  among 12 tribes",
+        Christ: "Christ is the  Temple among 12 disciples",
+        Christians: "We are Temple Holy Spirit Resides in Us",
+        Church: "Entire Church is Temple in which God Dwells",
+        Heaven: "There is a heavenly Temple",
+      };
+      let temple = {
+        isreal: "Literal Temple",
+        Christ: "Christ is the  Temple among 12 disciples",
+        Christians: "Holy SpiritResides in Us",
+        Church: "Temple of God",
+        Heaven: "Temple of God",
+      };
+
+      let templeLatterRain = {
+        isreal: "Holy Spirt entered Temple when it was complete",
+        Christ:
+          "Christ came at eh fullfiled time in 70 weeks prophecy to dwell among his people",
+        Christians: "Holy Spirit filled Church at PenteCost",
+        Church: "Holy Spirit will fill Whole Church at Latter Rain",
+        Heaven: "Temple of God",
+      };
+      let lamb = {
+        isreal: "Bring Lmab for Sacrifice",
+        Christ: "Lamb of God",
+        Christians: "Believe on lamb for Salvation",
+        Church: "Saved by Lamb",
+        Heaven: "Saved by Lamb",
+      };
+
+      //salvation context
+      let defaultString = ["1", "2", "3", "4", "5"];
+
+      function myFunction() {
+        let arrayName = document.getElementById("mySelect").value;
+        if (arrayName == "sacrificeAltar") {
+          fillTable(sacrificeAltar);
+        } else if (arrayName == "lavaBasin") {
+          fillTable(lavaBasin);
+        } else if (arrayName == "menorah") {
+          fillTable(menorah);
+        } else if (arrayName == "arkConvenant") {
+          fillTable(arkConvenant);
+        } else if (arrayName == "templeAsResidence") {
+          fillTable(templeAsResidence);
+        } else if (arrayName == "arkConvenant") {
+          fillTable(arkConvenant);
+        } else if (arrayName == "temple") {
+          fillTable(temple);
+        } else if (arrayName == "templeLatterRain") {
+          fillTable(templeLatterRain);
+        } else if (arrayName == "lamb") {
+          fillTable(lamb);
+        } else if (arrayName == "shewBread") {
+          fillTable(shewBread);
+        } else {
+          fillTable(defaultString);
+        }
+      }
+      function fillTable(objectName) {
+        // Assuming primaryContext, christContext, christianContext, churchContext, and heavenlyContext are defined somewhere in your code.
+        isrealContext.innerHTML = objectName.isreal;
+        christContext.innerHTML = objectName.Christ;
+        christianContext.innerHTML = objectName.Christians;
+        churchContext.innerHTML = objectName.Church;
+        heavenlyContext.innerHTML = objectName.Heaven;
+      }
+    </script>
+  </body>
+</html>
