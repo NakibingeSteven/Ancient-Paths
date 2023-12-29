@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Typology Introduction Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .currentPage {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 18px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        ul ul {
+            margin-left: 20px;
+        }
+
+        ul ul ul {
+            margin-left: 40px;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+            position: sticky;
+            top: 10px;
+            /* Adjust this value as needed to maintain spacing */
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 8px;
+            margin: 0 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+
+        section {
+            padding: 13px 0px 0;
+            /* Add extra padding to the top */
+            text-align: center;
+        }
+
+        /* Add more styling here as needed */
+
+        .card-container {
+            text-align: left;
+            /* Adjust the gap between cards */
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: calc(33.33% - 20px);
+            /* 3 cards per row; adjust as needed */
+            max-width: 300px;
+            /* Limit the card width */
+            transition: transform 0.2s;
+            /* Add a smooth hover effect */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            /* Lift the card slightly on hover */
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            /* Add spacing between image and button */
+        }
+
+        .download-button-container {
+            text-align: center;
+            margin-top: 10px;
+            /* Add spacing between button and card content */
+        }
+
+        .download-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            /* Add a smooth hover effect */
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+            /* Darker blue on hover */
+        }
+
+        /* Style for the "Download Documents" button */
+        .documents-button {
+            background-color: #28a745;
+            /* Green color for documents button */
+            margin-left: 4px;
+            /* Add spacing between the two buttons */
+        }
+
+        .documents-button:hover {
+            background-color: #1e7e34;
+            /* Darker green on hover */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <a href="index.html" class="currentPage">Introducution</a>
+        <a href="timeline.html">Confusion timeline</a>
+        <a href="Summary.html">Summary of Confusion</a>
+    </div>
+
+    <div class="main">
+        <nav>
+            <a href="index.html" id="nav-link-1">Three Lenses of Interpretation</a>
+        </nav>
+
+        <section id="section1">
+            <h2>Three Roads</h2>
+            <div class="card-container">
+                <p>Three important isms—preterism, futurism, and historicism reflect three competing schools of
+                    prophetic interpretation beneath all the varying interpretations</p>
+
+                <p><strong>The Counter Reformation</strong></p>
+                <p>Papal Rome rose
+                    to its own defense in what became known as the Counter Reformation. In 1545,
+                    she convened a special council destined to become the heart of her central
+                    intelligence operation against Martin Luther and the Protestants.</p>
+
+                <p>This famous
+                    council took place in northern Italy in the city of Trent, and is now known as
+                    the Council of Trent. its many sessions
+                    continued until 1563.</p>
+
+                <p>A new tactic
+                    was needed to counteract the reformers , something less obvious. <em>This is
+                        where the Jesuits came in.</em> On August 15, 1534, Ignatius of Loyola (1491-1556)
+                    founded the Society of Jesus, otherwise known as the Jesuits.</p>
+
+                <p>This highly
+                    secretive and militant Catholic order has a dark history of intrigue and
+                    sedition; that's why its members were expelled from Portugal (1759), France
+                    (1764), Spain (1767), Naples (1767), and Russia (1820</p>
+
+                <p><strong>Hiding the beast</strong></p>
+                <p>Two very
+                    intelligent Spanish Jesuits rose to the challenge, Luis de Alcasar (1554-1613)
+                    of Seville and Francisco Ribera (1537-1591) of Salamanca. Their strategy was,
+                    in a nutshell, one of reapplication and diversion, yet they went in opposite
+                    directions</p>
+
+                <p>Alcasar decided
+                    to apply the Bible's antichrist prophecies to the <em>ancient past </em>while
+                    Ribera applied them to the <em>distant future</em>. By reapplying these
+                    prophecies to the past and to the future instead of to the <em>present, </em>these
+                    two tricky Jesuit scholars sought to divert the prophetic finger light-years
+                    away from the Vatican.</p>
+
+                <p>Even the
+                    Catholic writer, G.S. Hitchcock, confirmed the origin of these anti-Protestant
+                    counter-theories:</p>
+
+                <p><em>The Futurist School, founded by the Jesuit Ribera in 1591,
+                        looks for Antichrist, Babylon, and a rebuilt temple in Jerusalem, at the end of
+                        the Christian Dispensation.</em></p>
+
+                <p><em>The Praeterist School, founded by the Jesuit Alcasar in 1614,
+                        explains Revelation by the Fall of Jerusalem or by the fall of Pagan Rome in
+                        410 A.D</em> G. S. Hitchcock, The Beasts and the Little Horn 7; Quoted by Froom, Vol.2, 488.</p>
+
+                <p><strong>PRETERISM</strong></p>
+                <p>Developed in
+                    the 1600's by the Jesuit Alcasar into a full anti-Protestant system, preterism
+                    strategically removes the “little horn!” stigma away from the Vatican. Jesuit
+                    objective achieved. Preterism sees the majority (or all) of the prophecies
+                    found in Matthew 24 and the Book of</p>
+
+                <p>Revelation as
+                    having already been fulfilled in either the fall of Jerusalem in 70 A.D. or in
+                    the fall or Rome. For preterists, “the end of the world” usually means “the end
+                    of the Jewish world.”</p>
+
+                <p>Full-preterists
+                    believe even the second coming of Jesus Christ somehow mystically occurred in
+                    70 A.D., whereas partial-preterists still believe in a future, literal return
+                    of the Savior. Preterists usually see the Roman Emperor Nero as the number-one
+                    candidate for antichrist</p>
+                <p>Preterism has
+                    always been a minority viewpoint within the church</p>
+
+                <p><strong>FUTURISM</strong></p>
+                <p>Futurism
+                    usually sees the majority of Revelation's prophecies (from chapter 4 onward) as
+                    yet on the horizon. Concerning the antichrist, instead of preterism application
+                    to Nero in the past, futurism generally applies the prophecies of “the little
+                    horn,” “the man of sin,” and “the beast” to a single, yet-future evil world
+                    ruler.</p>
+
+                <p>Compared to
+                    preterism and historicism, futurism has by far the most adherents in the 21st
+                    century as the majority report.</p>
+
+                <p>Futurism also
+                    stops the clock between the 69th and 70th weeks of Daniel 9:24-27.this
+                    parenthesis theory teaches that when Jerusalem or Rome fell, prophecy stopped,
+                    only to continue again near the time of the rapture. This skips 1,500 years of
+                    living prophetic history under the proverbial rug by inserting this infamous
+                    gap into the visions of Daniel and Revelation</p>
+
+                <p><strong>HISTORICISM</strong></p>
+                <p>Historicism teaches
+                    straight-forward, chronological progression by saying that the major prophecies
+                    of Daniel and Revelation find fulfillment <em>throughout</em> <em>Christian
+                        history while pointing toward the climactic, visible</em> <em>second coming of
+                        our Savior</em>. Historicism also places special emphasis on the ongoing
+                    struggle between Jesus Christ and Satan <em>inside </em>the Christian church</p>
+
+                <p>Historicism also recognizes that there were
+                    indeed prophecies fulfilled in the destruction of Jerusalem (thus preterists
+                    aren't all wrong), yet it also stands for the reality of future events such as
+                    the mark of the beast (see Revelation 14:9-12), the seven last plagues (see
+                    Revelation 16), the battle of Armageddon (see Revelation 16:16), the return of
+                    Jesus Christ (see Revelation 14:14-16), a 1000-year period (see Revelation 20),
+                    the final judgment (see Revelation 20:11-13), the lake of fire (see Revelation
+                    20:15) and the new earth (see Revelation 21:1). Thus futurists have some truth
+                    also</p>
+
+            </div>
+        </section>
+        <hr>
+    </div>
+
+    <script>
+        // Function to scroll to the middle of a section
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                var sectionHeight = section.clientHeight;
+                var scrollTo = section.offsetTop - (windowHeight - sectionHeight) / 2;
+                window.scrollTo({
+                    top: scrollTo,
+                    behavior: "smooth" // This makes the scroll smooth
+                });
+            }
+        }
+
+        // Function to attach click event listeners to the navigation links
+        function attachScrollToNavLink(linkId, sectionId) {
+            var navLink = document.getElementById(linkId);
+            if (navLink) {
+                navLink.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    scrollToSection(sectionId);
+                });
+            }
+        }
+
+        // Call the function for each navigation link and its corresponding section
+        attachScrollToNavLink("nav-link-1", "section1");
+        attachScrollToNavLink("nav-link-2", "section2");
+        attachScrollToNavLink("nav-link-3", "section3");
+        attachScrollToNavLink("nav-link-4", "section4");
+        attachScrollToNavLink("nav-link-5", "section5");
+        attachScrollToNavLink("nav-link-6", "section6");
+
+    </script>
+    </script>
+</body>
+
+</html>
