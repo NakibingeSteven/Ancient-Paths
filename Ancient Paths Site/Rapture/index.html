@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Typology Introduction Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .currentPage {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 18px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        ul ul {
+            margin-left: 20px;
+        }
+
+        ul ul ul {
+            margin-left: 40px;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+            position: sticky;
+            top: 10px;
+            /* Adjust this value as needed to maintain spacing */
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 8px;
+            margin: 0 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+
+        section {
+            padding: 13px 0px 0;
+            /* Add extra padding to the top */
+            text-align: center;
+        }
+
+        /* Add more styling here as needed */
+
+        .card-container {
+            text-align: left;
+            /* Adjust the gap between cards */
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: calc(33.33% - 20px);
+            /* 3 cards per row; adjust as needed */
+            max-width: 300px;
+            /* Limit the card width */
+            transition: transform 0.2s;
+            /* Add a smooth hover effect */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            /* Lift the card slightly on hover */
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            /* Add spacing between image and button */
+        }
+
+        .download-button-container {
+            text-align: center;
+            margin-top: 10px;
+            /* Add spacing between button and card content */
+        }
+
+        .download-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            /* Add a smooth hover effect */
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+            /* Darker blue on hover */
+        }
+
+        /* Style for the "Download Documents" button */
+        .documents-button {
+            background-color: #28a745;
+            /* Green color for documents button */
+            margin-left: 4px;
+            /* Add spacing between the two buttons */
+        }
+
+        .documents-button:hover {
+            background-color: #1e7e34;
+            /* Darker green on hover */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <a href="index.html" class="currentPage">Introducution</a>
+        <a href="leftBehind.html">Left or Taken</a>
+        <a href="Caught Up.html">Caught Up</a>
+        <a href="ThiefInTheNight.html">Thief in the Night</a>
+        <a href="TwinklingOfAnEye.html">Twinkling of An Eye</a>
+        <a href="ChurchAndTribulation.html">Church and Tribulation</a>
+        <a href="Summary.html">Summary</a>
+    </div>
+
+    <div class="main">
+        <nav>
+            <a href="#section1" id="nav-link-1">Rapture Origin</a>
+            <a href="#section2" id="nav-link-2">Section Two</a>
+            <a href="#section3" id="nav-link-3">Section Three</a>
+        </nav>
+
+        <section id="section1">
+            <h2>Rapture Origin</h2>
+            <div class="card-container">
+                <p>Although the exact word, “rapture,”
+                    isn't in the Bible, millions of prophecy-minded Christians have nevertheless
+                    been taught that soon God's Church will disappear from Planet Earth without a
+                    trace.</p>
+
+                <p>The real question is: Although
+                    “rapture” isn't a biblical word, is the doctrine there? The Bible certainly
+                    does teach the exciting truth that Jesus Christ will return for His people. Our
+                    Lord Himself said, <em>“I will come again and
+                        receive you to Myself” (John 14:3).</em> But will He
+                    come invisibly? Will the Church disappear? Does the Bible really teach
+                    vanishing Christians?</p>
+
+                <p>Jesus will come back to earth but the
+                    way he will come back is the way that confuses many people. (John 14:3).</p>
+
+                <p><strong>The
+                        scriptures commonly used to support the rapture doctrine include</strong></p>
+                <ol>
+                    <li><em>Then we which are alive and remain shall be <strong>caught up</strong> together with them in
+                            the
+                            clouds, to meet the Lord in the air: and so shall we ever be with the Lord</em>.(1Th 4:17
+                        KJV)</li>
+                    <li><em>At that time two men will be working in a
+                            field: one will be taken away, the other will be left behind. Two women will be
+                            at a mill grinding meal: one will be taken away, the other will be left
+                            behind.(</em>Mat 24:40-41 GNB)</li>
+                    <li><em>Listen to this secret truth: we shall not
+                            all die, but when the last trumpet sounds, we shall all be changed in an
+                            instant, as quickly as the blinking of an eye. For when the trumpet sounds, the
+                            dead will be raised, never to die again, and we shall all be changed.(</em>1Co 15:51 GNB)
+                    </li>
+                </ol>
+
+                <p><strong>Dispensationalist arguments for the rapture and responses to
+                        them</strong></p>
+                <ol>
+                    <li><strong>The Apostasy </strong></li>
+                </ol>
+                <p><em>”Let no one deceive you by any means; for that
+                        Day will not come unless the <strong>falling away </strong>comes first, and the man of
+                        sin is revealed, the son of perdition.”</em> <em>2 Thessalonians 2:3</em></p>
+
+                <p><strong>Some rapture promoters like Hal Lindsey says it
+                        should be translated “the departure, the snatching away.” No version of the
+                        Bible translates it this way.</strong></p>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>version</th>
+                            <th>translation</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                NIV, ESV:
+                            </td>
+                            <td>
+                                “the rebellion”
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                NASB:
+                            </td>
+                            <td>
+                                the apostasy
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                KJ, NKJV
+                            </td>
+                            <td>
+                                falling away
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Bible in Basic English
+                            </td>
+                            <td>
+                                falling away from the faith
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Darby Bible
+                            </td>
+                            <td>
+                                “the apostasy”
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Douay-Rheims
+                            </td>
+                            <td>
+                                “the revolt”
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                New Living
+                            </td>
+                            <td>
+                                “great rebellion against God”
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                New Century:
+                            </td>
+                            <td>
+                                “turning away from God”
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <ol>
+                    <li><strong>Not Appointed to Wrath (1 Thessalonians 5:9, 10)</strong></li>
+                </ol>
+                <p><em>“For God did not <strong>appoint us to wrath</strong>, but
+                        to obtain salvation through our Lord Jesus Christ, 10 who died for us, that
+                        whether we wake or sleep, we should live together with Him.”</em></p>
+
+                <p>The seven last <strong>plagues </strong>are the final outpouring of God's
+                    wrath <strong>without mixture </strong>of mercy. The question is, how can God's people be
+                    here during that period and <strong>survive</strong>? The answer is that <strong>God will
+                        protect </strong>His people. Israel was in <strong>Egypt </strong>when the plagues fell but
+                    God shielded them<strong>. </strong>The <strong>three Hebrew worthies </strong>went through the
+                    furnace but the fire did not burn them. <strong>Daniel </strong>spent a night in the
+                    lion's den but God preserved His life</p>
+
+                <p>The great <strong>tribulation Psalm </strong></p>
+                <p><em>“A thousand may fall at your side, and ten
+                        thousand at your right hand; but it shall <strong>not come near you</strong>. 8 Only with
+                        your eyes shall you look, and <strong>see the reward </strong>of the wicked. 9 Because
+                        you have made the Lord, who is my refuge, even the Most High, your dwelling
+                        place, 10 No evil shall befall you, <strong>nor shall any plague </strong>come near your
+                        dwelling; 11 For He shall give <strong>His angels charge </strong>over you, to keep you
+                        in all your ways”.</em><strong> <em>Psalm 91:7-11:</em></strong></p>
+
+                <ol>
+                    <li><strong>Keep from Hour of Tribulation</strong> (<strong>Revelation 3:10)</strong></li>
+                </ol>
+                <p><em>“Because you have kept My command to persevere,
+                        I also will <strong>keep you from the hour of trial </strong>which shall come upon the
+                        whole world, to <strong>test </strong>those who dwell on the earth.”</em></p>
+
+                <p><em>“I do not pray that You
+                        should take them out of the world, but that You should keep them from the evil
+                        one.”</em> John 17:15</p>
+
+                <ol>
+                    <li><strong>Come up hither (Revelation 4:1)</strong></li>
+                </ol>
+                <p><em>“After these things I looked, and behold, a door
+                        standing open in heaven. And the first voice which I heard was like a trumpet
+                        speaking with me, saying, "<strong>Come up here</strong>, and I will show you things
+                        which must take place after this."</em></p>
+
+                <p>Some see in this scripture the rapture
+                    of John to heaven hence representing the rapture of the saints at the end of
+                    time however prophets were able
+                    to visit distant places while they were <strong>in vision </strong>but they were <strong>physically
+                        on earth</strong>! <strong>Revelation 17:3 </strong>(caught away in the spirit to the
+                    wilderness) <strong>Revelation 21:9, 10 </strong>(caught away to the New Jerusalem)</p>
+
+                <ol>
+                    <li><strong>Coming with his saints (I Thessalonians 3:12, 13)</strong></li>
+                </ol>
+                <p><em>“And may the Lord make you increase and abound
+                        in love to one another and to all, just as we do to you, 13 so that He may
+                        establish your hearts blameless in holiness before our God and Father at the <strong>coming
+                        </strong>of our Lord Jesus Christ <strong>with all His saints</strong>.”</em></p>
+
+                <p><strong>Who are the saints </strong>that Jesus comes with? The Bible calls the <strong>angels
+                        'saints':</strong></p>
+                <p><em>"The Lord came from Sinai, and dawned on
+                        them from Seir; He shone forth from Mount Paran, and He came with <strong>ten
+                            thousands of saints ['holy ones' in the NIV]</strong>; from His right hand came a
+                        fiery law for them.</em><strong>”(Deut 33:2)</strong></p>
+
+                <p><strong>6.
+                        The lord brings the saints with Him</strong>. (1Th 4:13-14 KJV)<strong></strong></p>
+                <p><em>But I would not have you to be ignorant, brethren, concerning them
+                        which are asleep, that ye sorrow not, even as others which have no hope. For if
+                        we believe that Jesus died and rose again, even so them also <strong>which sleep in Jesus will
+                            God bring with
+                            him</strong>.</em> (1Th 4:13-14 KJV)</p>
+
+                <p>Some have argued for a <strong>rapture </strong>based on 1 Thessalonians
+                    4:14. They say that Jesus <strong>cannot bring </strong>the saints with Him unless he <strong>took
+                        them to heaven </strong>beforehand</p>
+
+                <p>The two scenarios</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>The rapture sequence</th>
+                            <th>The bible sequence of events</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Time of taking Church to heaven
+                            </td>
+                            <td>
+                                Rapture to heaven before the tribulation
+                            </td>
+                            <td>
+                                <strong>Second</strong> coming
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Saints with Jesus
+                            </td>
+                            <td>
+                                In heaven for 7 years
+                            </td>
+                            <td>
+                                The saved are in heaven for 1,000 years
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Jesus brings the saints with him to earth
+                            </td>
+                            <td>
+                                Glorious <strong>second
+                                    coming</strong> c
+                            </td>
+                            <td>
+                                <strong>Third coming</strong>: After the 1,000 years the meek will inherit
+                                the earth
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Saints inherit the earth
+                            </td>
+                            <td>
+                                The meek inherit the earth
+                            </td>
+                            <td>
+                                The meek inherit the earth
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Understanding the passage</p>
+                <p>For if we believe that
+                    Jesus <strong>died</strong> and <strong>rose again</strong><strong><em> [and went to
+                            heaven]</em></strong><em>,</em>, <strong>even
+                        so</strong> <strong><em>[in the same way] </em></strong>them
+                    also which sleep in Jesus will God bring with him<strong><em>[back with him to heaven after
+                            resurrection]</em></strong>.
+                    For this we say unto you by the word of the Lord, that we which are alive <em>and</em>
+                    remain unto the coming of the Lord shall not prevent them which are asleep.
+                    (1Th 4:14-15 KJV)</p>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Jesus</th>
+                            <th>saints</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                died
+                            </td>
+                            <td>
+                                Died
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                resurrected
+                            </td>
+                            <td>
+                                Will rise again
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                caught up in a cloud: (Acts 1:9)
+                            </td>
+                            <td>
+                                God will send the
+                                clouds with Jesus
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Taken to heaven
+                            </td>
+                            <td>
+                                Saints taken to heaven
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>This is expressed in the next verses (God's people are <strong>caught
+                        up in the clouds </strong>like Jesus was)</p>
+                <p><em>“For this we say to you by the word of the Lord,
+                        that we who are <strong>alive and remain </strong>until the coming of the Lord will by no
+                        means precede <strong>[to heaven] </strong>those who are <strong>asleep</strong>, for the Lord
+                        Himself will <strong>descend </strong>from heaven <strong>[where He went] </strong>with a
+                        <strong>shout</strong>,
+                        with the <strong>voice </strong>of an archangel, and with the <strong>trumpet </strong>of God
+                        and
+                        the <strong>dead in Christ will rise </strong>first, then we who are alive and remain
+                        shall be <strong>caught up </strong>together with them in the <strong>clouds </strong>to meet
+                        the
+                        Lord <strong>in the air</strong>. And thus we shall <strong>always be with the
+                            Lord</strong>.”</em><strong>
+                        Thessalonians 4:15-17</strong>:</p>
+
+                <p>Comparing with Other versions</p>
+                <p><em>We believe that Jesus died and rose again, and so we believe that <strong>God will take back with
+                            Jesus those
+                            who
+                            have died believing in him</strong></em>. (1Th 4:14 GNB)</p>
+
+                <p><em>For if we believe that Jesus died and rose again, even so God will also
+                        bring with Him </em><em>(to heaven)</em><em>all those who have fallen asleep through
+                        Jesus.(</em>1Th
+                    4:14 MKJV, emphasis added)</p>
+
+                <p>In summary: Jesus does not bring the righteous dead from heaven to
+                    earth but rather the Father brings the righteous dead with Jesus to heaven</p>
+
+            </div>
+        </section>
+        <hr>
+
+        <section id="section2">
+            <h2>Typology Introduction</h2>
+            <div class="card-container">
+                <!--Code here-->
+            </div>
+        </section>
+        <hr>
+
+        <section id="section3">
+            <h2>Typology Introduction</h2>
+            <div class="card-container">
+                <!--Code here-->
+            </div>
+        </section>
+        <hr>
+    </div>
+
+    <script>
+        // Function to scroll to the middle of a section
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                var sectionHeight = section.clientHeight;
+                var scrollTo = section.offsetTop - (windowHeight - sectionHeight) / 2;
+                window.scrollTo({
+                    top: scrollTo,
+                    behavior: "smooth" // This makes the scroll smooth
+                });
+            }
+        }
+
+        // Function to attach click event listeners to the navigation links
+        function attachScrollToNavLink(linkId, sectionId) {
+            var navLink = document.getElementById(linkId);
+            if (navLink) {
+                navLink.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    scrollToSection(sectionId);
+                });
+            }
+        }
+
+        // Call the function for each navigation link and its corresponding section
+        attachScrollToNavLink("nav-link-1", "section1");
+        attachScrollToNavLink("nav-link-2", "section2");
+        attachScrollToNavLink("nav-link-3", "section3");
+        attachScrollToNavLink("nav-link-4", "section4");
+        attachScrollToNavLink("nav-link-5", "section5");
+        attachScrollToNavLink("nav-link-6", "section6");
+
+    </script>
+    </script>
+</body>
+
+</html>
