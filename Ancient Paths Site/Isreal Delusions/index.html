@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Typology Introduction Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .currentPage {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 18px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        ul ul {
+            margin-left: 20px;
+        }
+
+        ul ul ul {
+            margin-left: 40px;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+            position: sticky;
+            top: 10px;
+            /* Adjust this value as needed to maintain spacing */
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 8px;
+            margin: 0 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+
+        section {
+            padding: 13px 0px 0;
+            /* Add extra padding to the top */
+            text-align: center;
+        }
+
+        /* Add more styling here as needed */
+
+        .card-container {
+            text-align: left;
+            /* Adjust the gap between cards */
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: calc(33.33% - 20px);
+            /* 3 cards per row; adjust as needed */
+            max-width: 300px;
+            /* Limit the card width */
+            transition: transform 0.2s;
+            /* Add a smooth hover effect */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            /* Lift the card slightly on hover */
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            /* Add spacing between image and button */
+        }
+
+        .download-button-container {
+            text-align: center;
+            margin-top: 10px;
+            /* Add spacing between button and card content */
+        }
+
+        .download-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            /* Add a smooth hover effect */
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+            /* Darker blue on hover */
+        }
+
+        /* Style for the "Download Documents" button */
+        .documents-button {
+            background-color: #28a745;
+            /* Green color for documents button */
+            margin-left: 4px;
+            /* Add spacing between the two buttons */
+        }
+
+        .documents-button:hover {
+            background-color: #1e7e34;
+            /* Darker green on hover */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <a href="index.html" class="currentPage">Introducution</a>
+        <a href="IsrealTheName.html">Isreal the Name</a>
+        <a href="JesusAsIsreal.html">Jesus the true Isreal</a>
+        <a href="ObedienceNotBlood.html">Obedience not Blood</a>
+        <a href="twoIsreals.html">Two Isreals in Bible</a>
+        <a href="DivineDivorce.html">Literal Isreal's Divine Divorce</a>
+        <a href="Armaggeddon.html">Isreal vs the Nations (Armaggedon)</a>
+        <a href="GogAndMagog.html">Isreal vs the Nations (Gog and Magog)</a>
+        <a href="1948.html">1948 Restoration</a>
+    </div>
+
+    <div class="main">
+        <nav>
+            <a href="#section1" id="nav-link-1">Which Isreal?</a>
+            <a href="#section2" id="nav-link-2">Literal Vs Spiritual Isreal</a>
+            <a href="#section3" id="nav-link-3">Why not Literal Isreal</a>
+            <a href="#section3" id="nav-link-4">The 144000 Question?</a>
+        </nav>
+
+        <section id="section1">
+            <h2>Many Views Aout Isreal</h2>
+            <div class="card-container">
+                <p>These are three main views when it comes to interpreting Isreal as people in the Bible </p>
+                <ol>
+                    <li>Replacement Theology</li>
+                    <li>Separation Theology</li>
+                    <li>Restoration Theology</li>
+                </ol>
+                <p>Most people studying prophecy today take the third view that all the End times events rotate around
+                    the Middle East, Jerusalem, and the Jews and this is understandable because most of the Bible events
+                    and prophecies
+                    though they might be global in scope they use Middle Eastern language for example Babylon (Modern
+                    Iraq),
+                    River Euphrates in the Middle East are examples of language used literally,prophetically and
+                    figuratively in the Bible.But before picking any interpretation a number of questions have to be
+                    considered by the interpretation we have chosen</p>
+
+                <ol>
+                    <li>What did Paul mean when he wrote, <b>"They are not all Israel who are of Israel"</b>
+                        (Romans9:6)?</li>
+                    <li>Whydoes the New Testament refer to <b>two Israels</b> namely one <b>'Israel after the flesh"</b>
+                        (1 Corinthians 10:18) and <b>"the Israel of God" (Galatians 6:14-16)</b> in Jesus
+                        Christ?</li>
+                    <li>What is the true meaning of Revelation's mysterious prophecies about 144,000 from
+                        all <b>the tribes of Israel and yet not all tribes are listed?</b></li>
+                    <li>What
+                        is the true meaning of Revelation's mysterious prophecies about Mystery
+                        Babylon and yet Baylon is a fallen empire?</li>
+                    <li>What is the true
+                        meaning of Revelation's mysterious prophecies about Euphrates River running
+                        dry, an occurence similar to the conquering of Babylon By Cyrus? </li>
+                    <li>What is the true
+                        meaning of Revelation's mysterious prophecies about Armageddon, “the battle of
+                        that great day of God Almighty” (Revelation 7:4; 16:13-16; 17:5)?</li>
+                </ol>
+            </div>
+        </section>
+        <hr>
+
+        <section id="section2">
+            <h2>Spiritual vs Literal Question</h2>
+            <div class="card-container">
+                <p>To any reader of the Bible, Revelation uses the terminology and geography of the Middle
+                    East in its prophecies and so it is not unueal to discover statements
+                    about “Mount Zion” (14:1), “the twelve tribes of Israel” (7:4-8), “Jerusalem”
+                    (21:10), “the temple” (11:19), “Sodom and Egypt” (11:8), “Babylon” (17:5), “Gog
+                    and Magog” (20:8), “the great river Euphrates” (16:12), and “Armageddon” (16:16).</p>
+
+                <p>One interesting question to consider is did God intend for these prophecies to
+                    be literally applied to "Israel after the flesh" (1 Corinthians 10:18), or
+                    should they be applied to "the Israel of God" (Galatians 6:16) in Jesus Christ? Some answers to this
+                    have led
+                    many to adopt a rapture point of view to tkae teh church out of the picture nd apply a literal
+                    meaning to these passages
+                    but this is in the face of the many applications of literal Old Testament peoples,stories,scripture
+                    which had their own literal meanings to represent spiritual things or things that expand greatly
+                    beyond their initial context to the worldwide church beyond Isreal.</p>
+                <p>Some examples of this Cases are shown below </p>
+
+                <h3>Seven branched candlestick as the churches</h3>
+                <p>In Revelation, John
+                    beheld the Christ walking "in the midst of the seven lampstands" (verse 13) taking our minds back to
+                    the literal seven-branched candlestick inside the Jewish temple before it was destroyed in 70 A.D.
+                    by
+                    Roman armies but while explaining the mystery of the visions it is interpreted as “…the seven
+                    lampstands which you saw <em>are the seven churches</em>” (Revelation
+                    1:20, emphasis added)</p>
+
+                <p>Thus,
+                    in Revelation's very first chapter, <strong>Jesus
+                        took something extremely Jewish and used it symbolically to represent His
+                        Church.</strong> As we shall see, this is one of the key interpretive principles to
+                    understanding the entire Book</p>
+
+                <h3>The woman jezebel</strong></h3>
+                <p>In
+                    Revelation 2, in a dictated letter to “the church in Thyatira” (verse 18),
+                    Jesus reproved His people for allowing "that
+                    woman Jezebel, who calls herself a prophetess, to teach and seduce My
+                    servants…" (Verse 20).</em> </p>
+
+                <p>Jezebel
+                    was a wicked woman in Old Testament times who entered Israel and caused
+                    problems. Was Jesus saying “Jezebel” had been reincarnated, or resurrected, and
+                    was literally teaching deception within Thyatira?</p>
+
+                <p>A
+                    little reflection reveals He used the word, “Jezebel,” as a <em>symbol </em>of an
+                    evil movement that was affecting His Church. As with the seven golden
+                    candlesticks, <strong>God's Messiah took
+                        something from Jewish history and applied it to His Church, “the Israel of God”
+                        (Galatians 6:16).</strong></p>
+
+                <h3>The drying of the river Euphrates</h3>
+                <p> Revelation also talks abput river Euphrates drying up before Armageddon? The
+                    Word says, <em>"The sixth angel poured out his bowl on the great river
+                        Euphrates, and its water was dried up, so that the way of the kings from the
+                        east might be prepared” (Revelation 16:12). </em></p>
+
+                <p><b>Literal interpretations would tell us: </b>
+                <ol>
+                    <li>This applies to the literal river Euphrates flowing
+                        near Baghdad, which the
+                        American troops crossed in Operation Iraqi Freedom?</li>
+                    <li>Or as some influenced by Modern geography predict that the
+                        "kings of the east" are Chinese kings or warriors whose foot
+                        soldiers will someday cross a dry riverbed before attacking Israel at
+                        Armageddon and that somehow Revelation 16:12 will fulfilled this way</li>
+                </ol>
+                </p>
+
+                <p><b>Spiritual interpretation backed by Literal Old Testament would tell us: </b>
+                <ol>
+                    <li>In 605 B.C., Babylon conquered Jerusalem and took the
+                        Jews captive for 70 years (see Daniel 9:2). After 70 years, an amazing set of
+                        circumstances occurred. The Euphrates was dried up, Babylon was conquered from
+                        the east, and Israel was delivered. This forms the background for a true
+                        understanding of Revelation 16:12.</li>
+                    <li>Ancient
+                        Babylon sat on the river Euphrates (see Jeremiah 51:63-64), and was surrounded
+                        by a massive wall of protection. The Euphrates flowed through Babylon, entering
+                        and exiting through two gates in the wall whose bars reached down to the
+                        riverbed. When those two gates, or “double doors” were completely shut and all
+                        other entrances were closed, Babylon was impregnable. Yet she was to fall
+                        suddenly and be destroyed (see Jeremiah 51:8)</li>
+                    <li>Then
+                        God would call Israel, saying, “My people, go out of the midst of her!”
+                        (Jeremiah 51:45) As we shall soon see, these exact words are repeated in
+                        Revelation to God's spiritual Israel about the necessity of coming out of
+                        Mystery Babylon (see Revelation 17:4-5; 18:2-8).</li>
+                    <li>In
+                        538 B.C., on the night of ancient Babylon's fall, her king and subjects were
+                        drunk with wine (see Daniel 5). So were the guards, and they forgot to fully
+                        close the double doors. Over 100 years earlier, God had predicted concerning
+                        Babylon and the Euphrates, “I will dry up your rivers” (Isaiah (44:27).</li>
+                    <li>John
+                        saw the harlot sitting “on many waters,” just like ancient Babylon sat upon the
+                        Euphrates river. Yet in Revelation, these “many waters” do not refer to the
+                        literal river Euphrates which today flows near Saddam Hussein's bombed-out
+                        Iraqi palaces. No! Revelation's angel interpreter said, “The waters which you
+                        saw, where the harlot sits, are peoples, multitudes, nations, and tongues”
+                        (Revelation 17:15).</li>
+                </ol>
+            </div>
+        </section>
+        <hr>
+        <section id="section3">
+            <h2>Why not Literal Isreal</h2>
+            <div class="card-container">
+                <p>Middle
+                    East literalism fails miserably to discern the true meaning and genius of the
+                    Book of Revelation. It also misses the fact that Revelation is simply using Old
+                    Testament terms, history, and geography as symbols just liek teh examples in the previous section
+                    pointed out</p>
+
+                <p>In
+                    1887, H. Grattan Guinness insightfully wrote <br><em>Futurism is literalism, and literalism in the
+                        interpretation of symbols is a denial of their symbolic character. It is an
+                        abuse and degradation of the prophetic word, and a destruction of its
+                        influence. It substitutes the imaginary for the real, the grotesque and
+                        monstrous for the sober and reasonable(H. Grattan Guinness, Romanism and the Reformation,
+                        163)</em></p>
+
+                <p>The
+                    error of those who adopt the “literal Middle-East method” of interpretation
+                    arise from </p>
+                <ol>
+                    <li>The belief that these prophecies
+                        must apply to Israel after the flesh,</li>
+                    <li>A failure to study the Old
+                        Testament's “root” history behind Revelation's prophecies, </li>
+                    <li>A failure to apply that history
+                        spiritually and universally to God's Israel, the Church </li>
+                    <li><em>A
+                            failure to center</em> <em>Revelation entirely in Jesus Christ and His global
+                            enemies</em>
+                    </li>
+                </ol>
+
+                <p>This
+                    issue can be compared to the wearing of two different pairs of glasses. If we
+                    put on the “literal Middle-East glasses” we will “see” Revelation's prophecies
+                    as applying only to literal places and Israel after the flesh. But if we put on
+                    the “Middle-East symbolism glasses” and read Revelation through the Spirit's
+                    aid, we will "see" these prophecies applying to the Israel of God</p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="section4">
+            <h2>The 144000 Question</h2>
+            <div class="card-container">
+                <p>God's final remnant is referred to in prophecy as the
+                    144,000 (see Revelation 14:1-5). They are described as coming from “all the
+                    tribes of the children of Israel” (Revelation 7:4). <strong>Does this mean they are all literal
+                        Jews?</strong></p>
+
+                <ul>
+                    <h2>Church and Isreal united</strong></h2>
+                </ul>
+                <p>We have previously seen that Paul wrote that <strong>Jews
+                        and Gentiles are now “one</strong>” and are part of “the same body” through Jesus
+                    Christ (Ephesians 2:14; 3:4-6). Does the last Book in the Bible contradict
+                    Paul's writings? Does Revelation rebuild a wall between Jews and Gentiles that
+                    Jesus Christ abolished at the cross? Of course not!</p>
+
+                <ul>
+                    <h2>Jerusalem and mount Zion not in Isreal</strong></h2>
+                </ul>
+
+                <p>The
+                    144,000 are described as standing on “Mount Zion” with the Lamb (Revelation
+                    14:1). Mount Zion is where Jerusalem sits. <strong>Yet
+                        in Revelation,</strong><strong> “</strong><strong>Mount Zion” does not
+                        refer to any mountain in the Middle East</strong>. John
+                    wrote,</p>
+                <p><em>“And he carried me away in <strong>the Spirit to a great and high mountain, and showed me the
+                            great city,
+                            the holy Jerusalem, descending out of heaven from God</strong>” (Revelation 21:10)</em></p>
+
+                <ul>
+                    <h2>Isreal according to James</strong></h2>
+                </ul>
+                <p>In
+                    the New Testament, James wrote his <em>letter
+                        “to the twelve tribes which are scattered abroad” (James 1:1).</em> Who were
+                    these twelve tribes? In the next sentence James called them, “My brethren.”
+                    Then he wrote to them about <em>“the testing
+                        of [their] faith” (James 1:3).</em> Thus, these “twelve tribes,” which James
+                    wrote to as a unit, were believers in Christ. In the same letter, he counseled
+                    those from among these “twelve tribes” who were sick to “call for the elders of
+                    the church” for special prayer (James 5:14). Thus to James, the “twelve tribes”
+                    were definitely part of the Church.</p>
+
+                <ul>
+                    <h2>The 144000 and Jesus</strong></h2>
+                </ul>
+                <p>The
+                    144,000 “follow the Lamb wherever He goes” (Revelation 14:1, 4). Therefore they
+                    are Christians who love Jesus. They are “not defiled with women, for they are
+                    virgins” (Revelation 14:4). This does not mean the 144,000 is composed of only
+                    literal, Jewish, unmarried, or celibate men. If so, this would be teaching mass
+                    celibacy, a dogma which Paul called a “doctrine of demons” (1 Timothy 4:1-3).
+                    In 2 Corinthians 11:2, Paul also used the word “virgin,” and he applied it to
+                    the Church.</p>
+
+                <p>What
+                    about the 144,000 not being “defiled with women”? This is contrasting them with
+                    the harlot Revelation 17, who is their opposite as she fornicates with the
+                    kings of the earth.</p>
+
+            </div>
+        </section>
+        <hr>
+    </div>
+
+    <script>
+        // Function to scroll to the middle of a section
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                var sectionHeight = section.clientHeight;
+                var scrollTo = section.offsetTop - (windowHeight - sectionHeight) / 2;
+                window.scrollTo({
+                    top: scrollTo,
+                    behavior: "smooth" // This makes the scroll smooth
+                });
+            }
+        }
+
+        // Function to attach click event listeners to the navigation links
+        function attachScrollToNavLink(linkId, sectionId) {
+            var navLink = document.getElementById(linkId);
+            if (navLink) {
+                navLink.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    scrollToSection(sectionId);
+                });
+            }
+        }
+
+        // Call the function for each navigation link and its corresponding section
+        attachScrollToNavLink("nav-link-1", "section1");
+        attachScrollToNavLink("nav-link-2", "section2");
+        attachScrollToNavLink("nav-link-3", "section3");
+        attachScrollToNavLink("nav-link-4", "section4");
+        attachScrollToNavLink("nav-link-5", "section5");
+        attachScrollToNavLink("nav-link-6", "section6");
+
+    </script>
+    </script>
+</body>
+
+</html>
