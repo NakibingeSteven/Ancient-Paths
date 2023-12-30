@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Typology Introduction Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .currentPage {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 18px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        ul ul {
+            margin-left: 20px;
+        }
+
+        ul ul ul {
+            margin-left: 40px;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+            position: sticky;
+            top: 10px;
+            /* Adjust this value as needed to maintain spacing */
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 8px;
+            margin: 0 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+
+        section {
+            padding: 13px 0px 0;
+            /* Add extra padding to the top */
+            text-align: center;
+        }
+
+        /* Add more styling here as needed */
+
+        .card-container {
+            text-align: left;
+            /* Adjust the gap between cards */
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: calc(33.33% - 20px);
+            /* 3 cards per row; adjust as needed */
+            max-width: 300px;
+            /* Limit the card width */
+            transition: transform 0.2s;
+            /* Add a smooth hover effect */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            /* Lift the card slightly on hover */
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            /* Add spacing between image and button */
+        }
+
+        .download-button-container {
+            text-align: center;
+            margin-top: 10px;
+            /* Add spacing between button and card content */
+        }
+
+        .download-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            /* Add a smooth hover effect */
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+            /* Darker blue on hover */
+        }
+
+        /* Style for the "Download Documents" button */
+        .documents-button {
+            background-color: #28a745;
+            /* Green color for documents button */
+            margin-left: 4px;
+            /* Add spacing between the two buttons */
+        }
+
+        .documents-button:hover {
+            background-color: #1e7e34;
+            /* Darker green on hover */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <a href="index.html" class="currentPage">Introducution</a>
+        <a href="page.html">Cyrus</a>
+    </div>
+
+    <div class="main">
+        <nav>
+            <a href="#section1" id="nav-link-1">7 Year Tribulation</a>
+            <a href="#section2" id="nav-link-2">Section Two</a>
+            <a href="#section3" id="nav-link-3">Section Three</a>
+        </nav>
+
+        <section id="section1">
+            <h2>Seven Year Tribulation</h2>
+            <div class="card-container">
+                <p>The
+                    concept of a seven-year period of tribulation is actually <em>the underlying foundation </em>of the
+                    entire rapture
+                    period. The
+                    theory is: rapture happens first, then seven years of tribulation where God
+                    rescues the church</p>
+
+                <h2>Background of the seven years</h2>
+                <p>Where
+                    does this “seven-year” concept come from anyway? </p>
+                <p>From Genesis to Revelation, there is <strong>no exact passage that specifically mentions
+                        a seven-year period</strong> of tribulation.</p>
+                <p>The
+                    entire theory is really based on a rather speculative interpretation of one
+                    week of Daniel 9:27 .the week is part of the seventy weeks prophecy</p>
+                <p>Daniel
+                    9:24-27 contains a prophecy from the angel Gabriel to encourage the Jewish
+                    people that they would be given a “second chance” to return to Jerusalem,
+                    rebuild their temple, and ultimately, receive their Messiah (Jesus Christ).This
+                    highly controversial prophecy literally reads:</p>
+                <p><strong><em>Seventy weeks</em></strong><em> are determined upon thy people and upon thy holy city,
+                        to finish the transgression, and to make an end of sins, and to make reconciliation
+                        for iniquity, and to bring in everlasting righteousness, and to seal up the
+                        vision and prophecy, and to anoint the most Holy. Know therefore and
+                        understand, that from the going forth of the commandment to restore and to
+                        build Jerusalem unto the Messiah the Prince shall be seven weeks, and
+                        threescore and two weeks [62 weeks]: the street shall be built again, and the
+                        wall, even in troublous times. And after threescore and two weeks shall Messiah
+                        be cut off, but not for himself: and the people of the prince that shall come
+                        shall destroy the city and the sanctuary; and the end thereof shall be with a
+                        flood, and unto the end of the war desolations are determined. And he shall
+                        confirm the covenant with many for <strong>one
+                            week</strong>: and in the midst of the week he shall cause the sacrifice and the
+                        oblation to cease, and for the overspreading of abominations he shall make it
+                        desolate, even until the consummation, and that determined </em><em>be poured upon the desolate
+                    </em><em>(Daniel
+                        9:24-27 KJV).</em></p>
+                <p>Gabriel then subdivides the period
+                    into three smaller periods which when added total to 70 weeks (7+62+1=70)</p>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Division</th>
+                            <th>Scriptural
+                                reference</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                seven weeks
+                            </td>
+                            <td>
+                                verse 25
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Sixty two weeks
+                            </td>
+                            <td>
+                                verse 25
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                one week
+                            </td>
+                            <td>
+                                verse 27
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Interpreting
+                        the seventy week prophecy</strong></p>
+
+                <p>A
+                    day in prophecy represents a year (see Numbers 14:34 and Ezekiel 4:6).<strong>for a more detailed
+                        study refer to
+                        our
+                        Daniel 9 study</strong></p>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                ASPECT
+                            </td>
+                            <td>
+                                Time
+                            </td>
+                            <td>
+                                SCRIPTURAL REFERENCE
+                            </td>
+                            <td>
+                                INTERPERATON
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                DECREE TO RESTORE and rebuild Jerusalem
+                            </td>
+                            <td>
+                                Starting point
+                            </td>
+                            <td>
+                                Commandment
+                                to restore and to build Jerusalem” (verse 25)
+                            </td>
+                            <td>
+                                Decree given in 457 bc
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                After 69 weeks (after 483 years),
+                            </td>
+                            <td>
+                                69 weeks
+                                (69x 7=483 years)
+                            </td>
+                            <td>
+                                “Shall Messiah be cut off” (verse 26).
+                            </td>
+                            <td>
+                                crucifixion of Jesus Christ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                The destruction of the temple
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                “the people of the prince that shall come shall
+                                destroy the city and the sanctuary” (verse 26)
+                            </td>
+                            <td>
+                                second destruction of Jerusalem and its rebuilt
+                                sanctuary by Roman armies under Prince Titus in 70
+                                A.D.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                The one week
+                            </td>
+                            <td>
+                                1 week
+                                (1x 7= 7 years)
+                            </td>
+                            <td>
+                                <em>And he shall confirm the covenant with many
+                                    for one week: and</em>
+                                <em>in the midst of the week he shall cause the
+                                    sacrifice and the oblation</em>
+                                <em>to cease… </em>(Daniel
+                                9:27 KJV).
+                            </td>
+                            <td>
+                                Rapture promoters claim this<strong> is the seven-year period of tribulation.</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <p><strong>The prince of the tribulation</strong></p>
+                <p>Vast
+                    majority of protestant reformation Bible scholars have not applied Daniel 9:27
+                    to a <strong>future Antichrist, Instead, they
+                        applied it to Jesus Christ.</strong></p>
+
+                <p>The
+                    world-famous Bible commentary written by Matthew</p>
+                <p>Henry
+                    says about Daniel 9:27<em>: “By offering
+                        himself a sacrifice once and for all he [Jesus] shall put an end to all the
+                        Levitical sacrifices.”(</em><em>Matthew</em><em> Henry's Commentary on the Whole Bible, Vol.
+                        IV—Isaiah
+                        to Malachi, Complete Edition, </em><em>(New York, NY: Fleming H. Revell Co., 1712) 1094-1095,
+                        notes on Daniel 9:27.)</em></p>
+
+                <p><strong>For more information check out our
+                        Daniel 9 study</strong></p>
+
+                <p><strong>DIFFERENT
+                        BELIEFS ABOUT THE TRIBULATION</strong></p>
+
+                <p>Christians
+                    all over Planet Earth sometimes engage in a fierce debate about the time Jesus
+                    Christ will return for His Church in relation to the tribulation. The main
+                    three views are</p>
+
+                <table class="">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>The view </strong>
+                            </td>
+                            <td>
+                                <strong>The name</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                before the seven years of tribulation
+                            </td>
+                            <td>
+                                pre-trib view
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                middle of the seven years
+                            </td>
+                            <td>
+                                mid-trib view
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                the end of the seven years
+                            </td>
+                            <td>
+                                post-tribview
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>The
+                    <strong>most important question</strong> too few seem
+                    to be asking is: “<strong><em>Is an end-time ‘seven-year period of tribulation’ really the correct
+                            interpretation of Daniel 9:27 in the first place?”</em></strong>
+                </p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="section2">
+            <h2>Time Shift</h2>
+            <div class="card-container">
+                <p>The
+                    rapture promoters slide the 70th week (the last seven years) all the way down
+                    to the end times, call it the tribulation, and say it applies to the Jewish
+                    people after we're gone</p>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Part of last one week(Daniel 9:27)</th>
+                            <th>Rapture promoters; interpretation</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                “He shall confirm the covenant with many for one
+                                week.”
+                            </td>
+                            <td>
+                                Antichrist will make a covenant (or peace treaty)
+                                with the Jews during the seven years of tribulation.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                The midst of the week he shall cause the sacrifice
+                                and the oblation to cease…”
+                            </td>
+                            <td>
+                                In the middle of the seven-year
+                                tribulation, the antichrist will break his covenant,
+                                turn against Israel, and stop their animal sacrifices
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                “he shall cause the sacrifice…to cease”
+                            </td>
+                            <td>
+                                Proof that a Jewish temple (which includes
+                                sacrifices) must be rebuilt on the Temple Mount inside Jerusalem.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Therefore,
+                    according to countless modern interpreters, Daniel 9:27 is applied to a <strong>future
+                        antichrist</strong>,
+                    <strong>a future peace treaty</strong> made with Israel, <strong>a future seven-year
+                        tribulation</strong>,
+                    and <strong>a future rebuilt Jewish temple inside Jerusalem</strong>. And all of this
+                    will supposedly start with the rapture.
+                </p>
+                <p style="text-align:center"><strong>Evidence
+                        against the tie shift</strong></p>
+
+
+                <h2>United seventy weeks </h2>
+                <p>The
+                    entire prophecy of Daniel 9:24-27 covers a period of “seventy weeks.” Reason
+                    and Logic requires that “seventy weeks” refers to one consecutive block of
+                    time, in other words, to seventy <em>straight sequential weeks.</em></p>
+                <p><em>All </em>biblical
+                    references to time are consecutive: 40 days and 40 nights (see Genesis 7:4),
+                    400 years in Egypt (see Genesis 15:13), 70 years of captivity (see Daniel 9:2),
+                    among others. In Daniel's prophecy, the “seventy weeks” were to begin during
+                    the reign of Persia and continue to the time of the Messiah.</p>
+
+
+                <h2>Counting issue:</h2>
+                <p>In
+                    terms of counting, the 70th week follow immediately after the 69th week. If it
+                    doesn't, then it cannot properly be called the 70th week!</p>
+                <p><strong>Unexplained gap</strong></p>
+                <p>There
+                    is no reason from the scripture to insert a 2,000-year gap between the 69<sup>th</sup>
+                    and 70th There is no gap between the first seven weeks and the following
+                    sixty-two weeks, so why insert one between the 69th and 70th week?</p>
+
+
+
+                <h2>Extra end time details not mentioned in last week</h2>
+                <p>Daniel
+                    9:27 says nothing about <strong>a seven-year
+                        period of “tribulation,”</strong> a <strong>“rebuilt”
+                        Jewish temple</strong>, or any “antichrist.” These are interpretations that are <strong><em>read
+                            into the text and not from the text</em></strong></p>
+                <h2>The word covenant apples to Christ not antichrist</h2>
+                <p>“He
+                    shall confirm the covenant.” Paul said “the covenant” was “confirmed before by
+                    God in Christ” (Galatians 3:17). Jesus Christ came “to <em>confirm </em>the
+                    promises made to the fathers” (Romans 15:8, emphasis added). In the King James
+                    Version, Daniel 9:27 doesn’t say “<em>a </em>covenant”
+                    or peace treaty, but “<em>the
+                    </em>covenant,” which applies to the
+                    New Covenant.</p>
+                <p>The
+                    word “covenant” is Messianic, and <em>always </em>applies
+                    to the Messiah, not the antichrist. Nowhere in the Bible does the antichrist
+                    make, confirm, or break a covenant with anyone</p>
+
+
+                <h2>The confirmed covenant with many</strong></h2>
+                <p>Jesus
+                    Christ said, “This is My blood of the new <em>covenant, </em>which is
+                    shed for <em>many…</em>” (Matthew 26:28). Jesus was quoting Daniel 9:27
+                    specifically.</p>
+
+                <h2>Stopping sacrifices after three and a half years</h2>
+                <p>“In
+                    the midst of the week he shall cause the sacrifice and the oblation to cease<strong>.” <em>After
+                            exactly three and a half years of holy ministry, Jesus Christ died on the
+                            cross, “in the midst of the week [in the middle of the seven years].” </em></strong></p>
+                <p>At
+                    the exact moment of His death, “the veil of the temple was torn in two from top
+                    to bottom…” (Matthew 27:51). This act of God signified that all animal
+                    sacrifices at that moment ceased to be of value. Why? Because the Perfect
+                    Sacrifice had been offered!</p>
+
+
+                <h2>Desolation of Jerusalem</h2>
+                <p>Jesus
+                    clearly applied the abomination of desolation n Daniel 9 to the time when His
+                    followers were to flee from Jerusalem before the destruction of the second
+                    temple in A.D. 70. (Matthew 24:15)</p>
+                <p>In
+                    a parallel text to Matthew 24:15, Jesus told His disciples, “When you see
+                    Jerusalem surrounded by armies [Roman armies led by Prince Titus], <em>then know that its desolation
+                        is
+                        near</em>” (Luke 21:20, emphasis added).</p>
+                <p>The disciples did “see” those very events.
+                    Because of the “abominations” of the Pharisees, Jesus told them,</p>
+                <p><em>“See! Your house is left to you desolate” (Matthew
+                        23:38).</em></p>
+                <p>Thus
+                    Gabriel's statement in Daniel 9:27 about Jerusalem becoming “desolate” was
+                    perfectly fulfilled in A.D. 70.</p>
+
+
+                <h2>Jesus and his ministry to the Jews</strong></h2>
+                <p>Gabriel
+                    said that the 70-week prophecy specifically applied to the Jewish people (see
+                    Daniel 9:24). During the period of Christ's public ministry of 31/2 years, the Master's focus was
+                    largely
+                    upon “the lost sheep of
+                    the house of Israel” (Matthew 10:6). After His resurrection and then for
+                    another 31/2 years, His disciples preached
+                    mostly to Jews (see Acts 1-6). </p>
+                <p>After
+                    that second 31/2-year period, in 34 A.D., the bold
+                    Stephen was stoned by the Jewish Sanhedrin (see Acts 7). This infamous deed
+                    marked the then-ruling Jewish leaders' final, official rejection of the gospel
+                    of our Savior. <em>Then </em>the gospel went to the Gentiles. In Acts 9, Saul became Paul,
+                    the “apostle to the Gentiles” (Romans 11:13). In Acts 10, God gave Peter a
+                    vision revealing it was <em>now
+                        time </em>to preach to the Gentiles (see
+                    Acts 10:1-28).</p>
+
+
+                <h2>Jesus and the forgive 490 times passage</h2>
+                <p>When
+                    Jesus was asked by Peter, how often one should forgive .He gave the answer of
+                    490 times which was a reference to the 490 years given to Isreal to accept the
+                    gospel and be saved or else the Romans would destroy their temple</p>
+                <p><em>Then came
+                        Peter to him, and said, Lord, how oft shall my brother sin against me, and I
+                        forgive him? till seven times? Jesus saith unto him, I say not unto thee, Until
+                        seven times: but, <strong>Until seventy times
+                            seven</strong>.(Mat 18:21-22 KJV</em><em>, emphasis added</em><em>)</em></p>
+
+                <h2>Tribulation: an attribute of the saints</h2>
+                <p>If you look up “tribulation” in a <em>Strong's </em>or <em>Young's
+                        Concordance, </em>you
+                    may be shocked to discover that almost every reference describes what believers
+                    suffer <em>through.
+                        Tribulation basically refer to Christians persecuted for their faith and not
+                        the unbelieving people</em></p>
+                <p>If the majority of the Bible's “tribulation texts”
+                    refer to what believers go <em>through, </em>why would</p>
+                <p>God's Word suddenly shift gears by teaching that “<em>the </em>tribulation” is something
+                    believers will <em>not
+                    </em>go through?</p>
+
+                <ul>
+                    <li>Jesus
+                        told His followers, “In the world <em>you </em>will have <em>tribulation</em>” (John 16:33,
+                        emphasis
+                        added). Paul told his early
+                        Christian converts, “…we must through many <em>tribulations </em>enter the kingdom of God” (Acts
+                        14:22, emphasis added). </li>
+                    <li>Paul
+                        wrote to the church at Thessalonica, “…we ourselves boast of you among the
+                        churches of God for your patience and faith in all your persecutions and <em>tribulations that
+                            you endure</em>”
+                        (2 Thessalonians 1:4, emphasis added).</li>
+                    <li>On
+                        the lonely isle of Patmos, John was our “companion in <em>tribulation</em>” (Revelation 1:9,
+                        emphasis
+                        added). </li>
+                    <li>Jesus
+                        told His church in Smyrna, “I know your works [and] <em>tribulation</em>…” (Revelation2:9,
+                        emphasis
+                        added).</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+    </div>
+
+    <script>
+        // Function to scroll to the middle of a section
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                var sectionHeight = section.clientHeight;
+                var scrollTo = section.offsetTop - (windowHeight - sectionHeight) / 2;
+                window.scrollTo({
+                    top: scrollTo,
+                    behavior: "smooth" // This makes the scroll smooth
+                });
+            }
+        }
+
+        // Function to attach click event listeners to the navigation links
+        function attachScrollToNavLink(linkId, sectionId) {
+            var navLink = document.getElementById(linkId);
+            if (navLink) {
+                navLink.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    scrollToSection(sectionId);
+                });
+            }
+        }
+
+        // Call the function for each navigation link and its corresponding section
+        attachScrollToNavLink("nav-link-1", "section1");
+        attachScrollToNavLink("nav-link-2", "section2");
+        attachScrollToNavLink("nav-link-3", "section3");
+        attachScrollToNavLink("nav-link-4", "section4");
+        attachScrollToNavLink("nav-link-5", "section5");
+        attachScrollToNavLink("nav-link-6", "section6");
+
+    </script>
+    </script>
+</body>
+
+</html>
